@@ -31,6 +31,17 @@ side(after).py - 사이트 인디케이터
 widthLight.py - 차폭등  
 
 ---
+## after  
+bucket.py - 바구니 테두리(인증실패 시 꺼짐)    
+charger(matBlue).py - 충전기(녹색으로 수정)  
+head(after).py - 헤드라이트(10회씩 루프)  
+headLine.py - 머리띠(인증실패 시 꺼짐)  
+off.py - 끄기 설정  
+rear.py - 리어 라이트  
+side(after).py - 사이트 인디케이터(인증실패 시 red)  
+widthLight.py - 차폭등(인증실패 시 꺼짐)  
+
+---
 ## remote
 remoteRunFlash.py - 주행, 충전  
 remoteFlowStop.py - 배달호출, 정지  
