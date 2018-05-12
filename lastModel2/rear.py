@@ -16,7 +16,7 @@ np = neopixel.NeoPixel(pin0, 16)
 while True:
     # Read any incoming messages.
     incoming = radio.receive()
-    if incoming == 'run':                
+    if incoming == 'run2':                
         for pixel_id in range(0, len(np)):
 
             np[pixel_id] = (50, 0, 0)
@@ -24,7 +24,7 @@ while True:
             # Display the current pixel data on the Neopixel strip
             np.show()
 
-    if incoming == 'flash':                
+    if incoming == 'flash2':                
         for pixel_id in range(0, len(np)):
 
             np[pixel_id] = (0, 0, 0)
@@ -32,7 +32,7 @@ while True:
             # Display the current pixel data on the Neopixel strip
             np.show()
             
-    if incoming == 'flow':
+    if incoming == 'flow2':
         for i in range(0, 2):
             for pixel_id in range(0, len(np)-8):
                 red = 255
@@ -84,7 +84,7 @@ while True:
         np.show()
         sleep(50)
             
-    if incoming == 'stop':
+    if incoming == 'stop2':
         for pixel_id in range(0, len(np)):
             red = 255
             green = 0
@@ -109,7 +109,7 @@ while True:
         np.show()
         sleep(50)
         
-    if incoming == 'auth':                
+    if incoming == 'auth2':                
         for pixel_id in range(0, len(np)):
 
             np[pixel_id] = (255, 0, 0)
@@ -117,7 +117,7 @@ while True:
             # Display the current pixel data on the Neopixel strip
             np.show()
             
-    if incoming == 'close':                
+    if incoming == 'close2':                
         for pixel_id in range(0, len(np)):
 
             np[pixel_id] = (0, 0, 0)
