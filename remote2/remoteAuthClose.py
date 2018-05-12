@@ -12,7 +12,7 @@ np = neopixel.NeoPixel(pin0, 16)
 # Event loop.
 while True:
     if button_a.was_pressed():
-        radio.send('auth')  # a-ha
+        radio.send('auth2')  # a-ha
     
     if button_b.was_pressed():
-        radio.send('close')  # a-ha
+        radio.send('close2')  # a-ha
