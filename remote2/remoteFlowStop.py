@@ -14,7 +14,7 @@ np = neopixel.NeoPixel(pin0, 16)
 # Event loop.
 while True:
     if button_a.was_pressed():
-        radio.send('flow')  # a-ha
+        radio.send('flow2')  # a-ha
     
     if button_b.was_pressed():
-        radio.send('stop')  # a-ha
+        radio.send('stop2')  # a-ha
