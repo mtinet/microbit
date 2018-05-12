@@ -15,7 +15,7 @@ np = neopixel.NeoPixel(pin0, 4)
 while True:
     # Read any incoming messages.
     incoming = radio.receive()
-    if incoming == 'run':
+    if incoming == 'run2':
         for num in range(0, 255):
             np[0] = (num, num, num)
             np[1] = (num, num, num)
@@ -24,7 +24,7 @@ while True:
             np.show()
             sleep(10)
 
-    if incoming == 'flash':
+    if incoming == 'flash2':
         np[0] = (0, 0, 0)
         np[1] = (0, 0, 0)
         np[2] = (0, 0, 0)
@@ -32,7 +32,7 @@ while True:
         np.show()
         sleep(10)    
             
-    if incoming == 'flow':
+    if incoming == 'flow2':
         for num in range(0, 255):
             np[0] = (num, num, num)
             np[1] = (num, num, num)
@@ -41,7 +41,7 @@ while True:
             np.show()
             sleep(10)
             
-    if incoming == 'stop':
+    if incoming == 'stop2':
         for num in range(0, 255):
             np[0] = (num, num, num)
             np[1] = (num, num, num)
@@ -50,7 +50,7 @@ while True:
             np.show()
             sleep(10)
             
-    if incoming == 'auth':
+    if incoming == 'auth2':
         for num in range(0, 255):
             np[0] = (num, num, num)
             np[1] = (num, num, num)
@@ -59,7 +59,7 @@ while True:
             np.show()
             sleep(10)
             
-    if incoming == 'close':                
+    if incoming == 'close2':                
         np[0] = (0, 0, 0)
         np[1] = (0, 0, 0)
         np[2] = (0, 0, 0)
